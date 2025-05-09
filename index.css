@@ -1,0 +1,10 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    display: inline-block;
+}
