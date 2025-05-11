@@ -17,7 +17,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -27,3 +27,21 @@ const posts = [
         likes: 152
     }
 ]
+
+const like = document.getElementById("like")
+const likes = document.getElementById("likes")
+const photo = document.getElementById("photo")
+like.addEventListener("dblclick", function () {
+
+    let currentCount = parseFloat(likes.innerText)
+    let newCount = currentCount+1
+
+    likes.innerHTML = newCount
+})
+photo.addEventListener("dblclick", function () {
+
+    let currentCount = parseFloat(likes.innerText)
+    let newCount = currentCount+1
+
+    likes.innerHTML = newCount
+})
